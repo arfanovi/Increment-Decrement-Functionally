@@ -1,0 +1,93 @@
+
+
+.increment-head{
+    animation: color-change 8s linear infinite alternate both;
+    /* background-color: aqua; */
+    padding: 30px;
+   font-size: 20px;
+    text-align: center;
+}
+
+
+@keyframes color-change {
+    0% {
+        background-color: #19dcea;
+    }
+    25% {
+        background-color: #b22cff;
+
+    }
+    50% {
+        background-color: #ea2222;
+    }
+    75% {
+        background-color: #f5be10;
+    }
+    100% {
+        background-color: #3bd80d;
+    }
+    
+}
+
+
+
+#increment-btn{
+    background-color: #8db3bd;
+    height: 105px;
+    width: 350px;
+    font-weight: 900;
+    font-size: 40px;
+    text-align: center;
+    /* border-top-right-radius: 40px; */
+    /* border-radius: 120px 100px / 10px 30px; */
+    border-radius: 10px;
+}
+#decrement-btn{
+    background-color: #8db3bd;
+    height: 105px;
+    width: 350px;
+    color: red;
+    font-weight: 900;
+    font-size: 40px;
+    text-align: center;
+    /* border-top-right-radius: 40px; */
+    /* border-radius: 120px 100px / 10px 30px; */
+    border-radius: 10px;
+}
+
+.btn{
+    align-items: center;   
+    display: flex; 
+    gap: 10px; 
+    padding: 10px; 
+    justify-content: center;
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Hover background color */
+    color: #fff; /* Hover text color */
+    font-family: 'Courier New', Courier, monospace; /* Hover font */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hover box shadow */
+    border: 2px solid #0056b3; /* Hover border */
+}
+.btn:hover img {
+    height: 35px; /* Increase image height on hover */
+}
+
+.btn span {
+    margin-top: 10px;
+    transition: margin-top 0.3s ease; /* Smooth transition for margin-top */
+}
+
+        @media (max-width: 600px){
+            .btn{
+                align-items: center;
+                text-align: center;
+            }
+        }    
+/* Desktops (min-width: 769px) */
+@media (min-width: 769px) { 
+    .btn{
+        margin-left: 40%;
+    } 
+}
